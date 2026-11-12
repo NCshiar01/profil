@@ -1,0 +1,252 @@
+/* إعدادات الخطوط والألوان الأساسية المستوحاة من ورق الواشي الياباني */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4ece1; /* لون ورق الواشي الدافئ */
+    color: #2b2623; /* لون الحبر الياباني الداكن (Sumi Ink) */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    /* نمط خلفية هندسي خفيف مستوحى من النقوش اليابانية */
+    background-image: radial-gradient(#d8cbb8 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* شريط التنقل العلوي بلون النيلة الياباني الداكن (Ai-iro) */
+nav {
+    background-color: #1d2d44;
+    border-bottom: 4px solid #b8292f; /* خط أحمر قرمزي مستوحى من بوابات التوري */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #f4ece1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* تأثير التحويم على الروابط */
+nav ul li a:hover {
+    background-color: #b8292f; /* الأحمر القرمزي الياباني */
+    color: #ffffff;
+    border-color: #e0b84c; /* إطار ذهبي خفيف */
+}
+
+/* الحاوية الرئيسية */
+.scroll-container {
+    width: 85%;
+    max-width: 880px;
+    margin: 30px auto;
+}
+
+/* تنسيق البطاقات والأقسام كالمخطوطات اليابانية */
+.card {
+    background-color: #fcf9f2;
+    margin-bottom: 30px;
+    padding: 35px;
+    border: 2px solid #1d2d44;
+    border-radius: 8px;
+    box-shadow: 6px 6px 0px #b8292f; /* ظل صلب بأسلوب طباعة الخشب اليابانية Ukiyo-e */
+    position: relative;
+}
+
+/* الختم الياباني الأحمر (Hanko Stamp) */
+.jp-stamp {
+    display: inline-block;
+    background-color: #b8292f;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #8a1c21;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* تنسيق العناوين (h1 إلى h6) */
+h1 {
+    color: #b8292f;
+    font-size: 32px;
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #1d2d44;
+    border-bottom: 2px dashed #b8292f;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h3, h4, h5 {
+    color: #8a1c21;
+    margin-bottom: 10px;
+}
+
+h6 {
+    color: #5c534c;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* تمييز النصوص المهمة داخل الفقرات */
+.highlight {
+    color: #b8292f;
+    font-weight: bold;
+    background-color: #f3e4d7;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* تنسيق الصورة الشخصية */
+.profile-frame {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-frame img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1d2d44;
+    outline: 3px solid #b8292f;
+    padding: 3px;
+    background-color: #fcf9f2;
+    transition: transform 0.3s ease;
+}
+
+.profile-frame img:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق الجدول الأكاديمي */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #1d2d44;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #1d2d44;
+    color: #f4ece1;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f1e8;
+}
+
+/* تنسيق القوائم */
+.jp-list, .jp-ordered-list {
+    padding-right: 25px;
+}
+
+.jp-list li, .jp-ordered-list li {
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+.jp-list li::marker {
+    color: #b8292f;
+    font-size: 1.2em;
+}
+
+.jp-ordered-list li::marker {
+    color: #1d2d44;
+    font-weight: bold;
+}
+
+/* تنسيق نموذج التواصل */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #1d2d44;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #c4b6a6;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #2b2623;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b8292f;
+}
+
+/* زر الإرسال */
+.btn-submit {
+    background-color: #b8292f;
+    color: #ffffff;
+    border: 2px solid #1d2d44;
+    padding: 14px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1d2d44;
+    color: #f4ece1;
+    border-color: #b8292f;
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #1d2d44;
+    color: #f4ece1;
+    text-align: center;
+    padding: 15px;
+    border-top: 4px solid #b8292f;
+    margin-top: 40px;
+    font-size: 14px;
+}
